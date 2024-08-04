@@ -57,6 +57,8 @@ $(document).ready(function () { // Espera até que o documento esteja pronto par
             saveTasks(); // Salva as tarefas no localStorage
             $('#taskInput').val(''); // Limpa o campo de entrada
             $('#taskInput').focus(); //Mantem o foco no input
+        } else {
+            alert("Não há nada a ser salvo!!!");
         }
     }
 
