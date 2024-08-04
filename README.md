@@ -1,0 +1,1 @@
+Olá! Esta é uma todoList turbinada!Com ela, você consegue estabelecer níveis de prioridade para suas tarefas colocando estrelas. Além disso, ela armazena as tarefas em ordem alfabética, para uma melhor organização!
