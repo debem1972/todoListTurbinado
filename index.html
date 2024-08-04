@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>todoList Turbinada</title>
 </head>
 
@@ -13,8 +16,8 @@
         <h1>TodoList com Prioridade</h1>
         <div class="input-group">
             <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
-            <button id="addTaskBtn">Adicionar</button>
-            <button id="updatePriorityBtn">Atualiza prioridade</button>
+            <button id="addTaskBtn" title="Adicionar tarefa"><i class="fa-solid fa-feather"></i></button>
+            <button id="updatePriorityBtn" title="Atualizar página"><i class="fa-solid fa-arrows-rotate"></i></button>
         </div>
         <ul id="todoList"></ul>
     </div>
