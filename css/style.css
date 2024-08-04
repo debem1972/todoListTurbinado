@@ -11,7 +11,7 @@ body {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
 }
 
@@ -39,11 +39,19 @@ button {
     border-radius: 4px;
     margin-left: 5px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 2px 2px 3px grey;
 }
 
 button:hover {
     background-color: #218838;
 }
+
+button:active {
+    transform: scale(0.9);
+}
+
+
 
 ul {
     list-style: none;
@@ -54,11 +62,14 @@ li {
     background: #f9f9f9;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
+    border: none;
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 2px 2px 3px grey;
+    cursor: pointer;
 }
 
 li.done {
