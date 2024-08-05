@@ -15,10 +15,10 @@ body {
     width: 300px;
 }
 
-header{
+header {
     /*border:2px solid red;*/
     display: flex;
-    justify-content:space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
