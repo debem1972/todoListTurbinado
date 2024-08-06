@@ -1,31 +1,67 @@
+@media screen and (max-width: 768px) {
+    .container {
+        /*border: 3px solid black;*/
+        width: 100%;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-shadow: 1px 1px 2px grey;
+    }
+
+    /*.iframe {*/
+        /*top: 3rem;
+        left: 5rem;*/
+        /*margin: 3rem auto;
+
+    }*/
+
+
+    ul li {
+        font-size: 1.1rem;
+    }
+
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-}
 
 .container {
     /*border: 2px solid black;*/
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
-    box-shadow:2px 2px 3px grey;
-    height: 95vh;
-    max-width: 300px;    
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
 }
 
-#cabecalho{
+.content{
+    /*border:2px solid red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 224, 224);
+    width: 100%;
+    font-family: "escribe";
+    font-style: normal;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: none;
+    text-align: center;
+    height: 100%;
+}
+
+#cabecalho {
     /*border:2px solid grey;*/
+    margin-top:5px;
     margin-bottom: 5px;
 }
 
@@ -43,7 +79,7 @@ h1 {
 }
 
 .input-group {
-    /*border:2px solid pink;*/
+    /*border:2px solid blue;*/
     display: flex;
     justify-content: space-between;
 }
@@ -75,10 +111,21 @@ button:active {
     transform: scale(0.9);
 }
 
-.content{
-    /*border:2px solid green;*/
-    height: 85%;
-    overflow: scroll;
+.folha {
+     /*border: 2px solid red;*/
+     /*background-color: #f0f0f0;*/
+     background-color:ghostwhite;
+     border-radius: 8px;
+     padding: 8px;
+     margin: 30px auto;
+     width: 92vw;
+     max-width:400px;
+     height: 100vh;
+     /*height: auto;*/
+     text-align: justify;     
+     overflow: auto;
+     box-shadow: 8px 8px 15px black;
+     z-index: 1;
 }
 
 ul {
@@ -89,14 +136,14 @@ ul {
 li {
     background: #f9f9f9;
     padding: 10px;
-    margin: 5px 0;
-    /*border: 1px solid #ddd;*/
+    margin: 5px 0;   
     border: none;
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 2px 2px 3px grey;
+    /*font-size: 1.6rem;*/
+    box-shadow: 2px 2px 3px grey, -1px -1px 3px grey;
     cursor: pointer;
 }
 
