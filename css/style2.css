@@ -1,6 +1,5 @@
 @media screen and (max-width: 768px) {
     .container {
-        /*border: 3px solid black;*/
         width: 100%;
         flex-direction: column;
     }
@@ -16,6 +15,18 @@
         /*margin: 3rem auto;
 
     }*/
+
+    
+    #cabecalho {
+        width:90%;
+    }
+    
+    input {
+        width: 90%;
+        box-shadow:2px 2px 3px grey;
+        border:none;
+        outline: none;
+    }
 
 
     ul li {
