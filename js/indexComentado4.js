@@ -150,4 +150,24 @@ $(document).ready(function () { // Espera até que o documento esteja pronto par
         alert("Seu navegador não suporta reconhecimento de fala.");  // Exibe um alerta informando que o navegador não suporta a funcionalidade
     }
 
+
+    //------------------------------------------------------------
+    //Chamando o vídeo de ajuda
+    // Chamando o vídeo de ajuda
+$('#ajuda').click(function () {
+    const $divAjuda = $('.iframe');
+    
+    if ($divAjuda.css('display') === 'block') {
+        $divAjuda.css('display', 'none');
+    } else {
+        $divAjuda.css('display', 'block');
+        $divAjuda.css('animation', 'viewHelp 1s');
+    }
 });
+
+
+});
+
+
+//-----------------------------------------------------------------
+
