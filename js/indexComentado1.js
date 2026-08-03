@@ -39,26 +39,15 @@ $(document).ready(function () { // Espera até que o documento esteja pronto par
             </li>
         `);
     }
-    //---------------------------------------------------------------
-    // Função para capitalizar a primeira letra, tornando-a maiúscula
-    function capitalizeFirstLetter(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-    }
-
-    //---------------------------------------------------------------
 
     // Função para adicionar uma nova tarefa
     function addTask() {
         let taskText = $('#taskInput').val().trim(); // Obtém o texto da tarefa do campo de entrada
         if (taskText) { // Se o texto não estiver vazio
-            taskText = capitalizeFirstLetter(taskText); // Capitaliza a primeira letra
             let task = { text: taskText, priority: 0, done: false }; // Cria um novo objeto de tarefa
             addTaskToList(task); // Adiciona a tarefa à lista
             saveTasks(); // Salva as tarefas no localStorage
             $('#taskInput').val(''); // Limpa o campo de entrada
-            $('#taskInput').focus(); //Mantem o foco no input
-        } else {
-            alert("Não há nada a ser salvo!!!");
         }
     }
 
@@ -97,15 +86,10 @@ $(document).ready(function () { // Espera até que o documento esteja pronto par
         saveTasks(); // Salva as tarefas no localStorage
     });
 
-    // Marca ou desmarca a tarefa como concluída quando o texto da tarefa é clicado
-    $('#todoList').on('click', '.task-text', function () {
-        $(this).closest('li').toggleClass('done'); // Alterna a classe 'done' na tarefa
+    // Marca ou desmarca a tarefa como concluída quando a tarefa é clicada
+    $('#todoList').on('click', 'li', function () {
+        $(this).toggleClass('done'); // Alterna a classe 'done' na tarefa
         saveTasks(); // Salva as tarefas no localStorage
-    });
-
-    // Adiciona um botão para atualizar a prioridade das tarefas
-    $('#updatePriorityBtn').click(function () {
-        loadTasks(); // Recarrega as tarefas e as ordena
     });
 
     // Carrega as tarefas do localStorage ao carregar a página
